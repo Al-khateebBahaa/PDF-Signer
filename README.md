@@ -38,7 +38,7 @@ Add the dependency below to your **module**'s `build.gradle` file:
 
 ```gradle
 dependencies {
-    implementation "com.github.AlMOHANDSen:PDF_Signer_Tool:Tag"
+    implementation "com.github.Al-khateebBahaa:PDF-Signer:1.0.0-alpha"
 }
 ```
 
