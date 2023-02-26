@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/freehanditem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/deleteSignature"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end|center_vertical"
+        android:layout_margin="5dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/com_bk_signer_ic_delete"
+        android:tint="@color/delete" />
+</FrameLayout>

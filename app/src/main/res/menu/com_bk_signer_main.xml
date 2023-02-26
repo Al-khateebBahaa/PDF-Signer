@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_sign"
+        android:icon="@drawable/com_bk_signer_ic_sigining"
+        android:orderInCategory="100"
+        android:title="@string/com_bk_signerSign_pdf"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_save"
+        android:enabled="false"
+        android:icon="@drawable/ic_save_black_24dp"
+        android:orderInCategory="100"
+        android:title="@string/com_bk_signerSave_pdf"
+        app:showAsAction="ifRoom" />
+</menu>

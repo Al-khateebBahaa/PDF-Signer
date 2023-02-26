@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0.7dp"
+    android:orientation="horizontal">
+
+
+    <ImageButton
+        android:id="@+id/delButton"
+        android:layout_width="@dimen/ctx_menu_item_width"
+        android:layout_height="@dimen/ctx_menu_height"
+        android:background="@color/colorAccent"
+        android:src="@drawable/com_bk_signer_ic_delete" />
+
+</androidx.cardview.widget.CardView>
