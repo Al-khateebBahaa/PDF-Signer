@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bk.signer_tool">
+
+
+    <application
+        >
+
+        <activity
+
+            android:name="com.bk.signer_tool.Signature.FreeHandActivity"
+            android:label="Draw Signature"
+            android:theme="@style/com_bk_signerAppTheme"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:theme="@style/com_bk_signerAppTheme"
+            android:name="com.bk.signer_tool.Signature.SignatureActivity"
+            android:label="Signatures" />
+
+        <activity
+            android:theme="@style/com_bk_signerAppTheme"
+            android:name="com.bk.signer_tool.digital_signer.DigitalSignatureActivity"
+            />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/com_bk_signer_file_paths" />
+        </provider>
+    </application>
+
+</manifest>

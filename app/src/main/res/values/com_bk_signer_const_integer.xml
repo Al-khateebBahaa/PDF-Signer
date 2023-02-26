@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="font_seek_bar_max">10</integer>
+    <integer name="font_seek_bar_min">2</integer>
+    <integer name="font_seek_bar_progress">3</integer>
+
+</resources>

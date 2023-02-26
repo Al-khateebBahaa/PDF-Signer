@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:id="@+id/listItemLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/fileImageView"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:src="@drawable/ic_adobe" />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="5"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/fileItemTextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:gravity="start|bottom"
+                android:lines="1"
+                android:text="Clean your room"
+                android:textColor="#4D4C4C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/dateItemTimeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fileItemTextview"
+                android:gravity="start|center"
+                android:text="27 Sept 2015, 22:30"
+                android:textColor="@color/grey_10"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/sizeItemTimeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fileItemTextview"
+                android:layout_marginRight="16dp"
+                android:gravity="end"
+                android:text="sample"
+                android:textColor="@color/grey_10"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

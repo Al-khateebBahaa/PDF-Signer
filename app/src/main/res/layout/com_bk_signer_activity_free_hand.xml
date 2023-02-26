@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false">
+
+    <LinearLayout
+        android:id="@+id/signature_panel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomtoolbar"
+        android:layout_centerInParent="true"
+        android:background="@color/ink_signature_background_view_color"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/signature_separator_color" />
+
+        <FrameLayout
+            android:id="@+id/drawingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+
+            <View
+                android:id="@+id/signature_baseline_view"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/signature_base_line_bottom_margin"
+                android:background="@color/signature_blue" />
+
+            <com.bk.signer_tool.Signature.SignatureView
+                android:id="@+id/inkSignatureOverlayView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/signature_separator_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/inkblack"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/radioRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/inkred"
+                android:onClick="onRadioButtonClicked"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/radioBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/inkblue"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/radiogreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/inkgreen"
+                android:onClick="onRadioButtonClicked" />
+        </RadioGroup>
+
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:max="@integer/font_seek_bar_max"
+            android:min="@integer/font_seek_bar_min"
+            android:progress="@integer/font_seek_bar_progress" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/action_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/spacing_normal"
+            android:alpha="0.5"
+            android:background="@android:color/transparent"
+            android:rotation="270"
+            android:src="@drawable/ic_replay_black_24dp" />
+    </LinearLayout>
+
+</RelativeLayout>

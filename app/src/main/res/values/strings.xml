@@ -1,0 +1,30 @@
+<resources>
+    <string name="com_bk_signer_app_name">PDF Signer</string>
+    <string name="com_bk_signer_navigation_drawer_open">Open navigation drawer</string>
+    <string name="com_bk_signer_navigation_drawer_close">Close navigation drawer</string>
+    <string name="com_bk_signer_nav_header_desc">Navigation header</string>
+    <string name="com_bk_signer_action_settings">Settings</string>
+
+    <string name="com_bk_signer_menu_home">My Documents</string>
+    <string name="com_bk_signer_menu_signature">Signatures</string>
+    <string name="com_bk_signer_menu_slideshow">Slideshow</string>
+    <string name="com_bk_signer_menu_settings">Settings</string>
+    <string name="com_bk_signer_menu_share">Share</string>
+    <string name="com_bk_signer_menu_send">Send</string>
+
+    <string name="com_bk_signer_signature_title">Place Signature</string>
+    <string name="com_bk_signer_action_save">Done</string>
+    <string name="com_bk_signer_clear">Clear</string>
+    <string name="com_bk_signerNo_documents_available">No Documents Found</string>
+    <string name="com_bk_signerSign_a_save_pdf_and_it_will_show_up_here">Sign a save PDF and it will show up here</string>
+    <string name="com_bk_signerSign_pdf">Sign PDF</string>
+    <string name="com_bk_signerSave_pdf">Save PDF</string>
+    <string name="com_bk_signerOpen_file">Open File</string>
+    <string name="com_bk_signerEmail">Email</string>
+    <string name="com_bk_signerShare_a_copy">Share a Copy</string>
+    <string name="com_bk_signerCopy_to">Copy To</string>
+    <string name="com_bk_signerRename">Rename</string>
+    <string name="com_bk_signerDelete">Delete</string>
+    <string name="com_bk_signerNo_signatures_available">No Signatures Found</string>
+    <string name="com_bk_signerCreate_a_new_signature">Create a new Signature</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="com_bk_signer_app_name">PDF Signer</string>
+    <string name="com_bk_signer_navigation_drawer_open">Open navigation</string>
+    <string name="com_bk_signer_navigation_drawer_close">Close navigation </string>
+    <string name="com_bk_signer_nav_header_desc">Navigation header</string>
+    <string name="com_bk_signer_action_settings">Settings</string>
+
+    <string name="permission_request">Request Permission</string>
+    <string name="give_app_permission">Please give the app required permission to work perfectly</string>
+</resources>
