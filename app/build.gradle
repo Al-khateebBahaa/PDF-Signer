@@ -65,8 +65,8 @@ afterEvaluate {
                 from components.release
 
                 groupId = 'com.github.Al-khateebBahaa'
-                artifactId = 'app'
-                version = '1.0.0'
+                artifactId = 'app_module'
+                version = "$sdk_version"
             }
         }
     }

@@ -10,11 +10,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
 
     }
 }
 rootProject.name = "pdf_signer"
 include ':app'
 include ':core'
-include ':demo'

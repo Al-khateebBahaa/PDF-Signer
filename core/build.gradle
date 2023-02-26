@@ -53,8 +53,8 @@ afterEvaluate {
                 from components.release
 
                 groupId = 'com.github.Al-khateebBahaa'
-                artifactId = 'core'
-                version = '1.0.0'
+                artifactId = 'core_module'
+                version = "$sdk_version"
             }
         }
     }
