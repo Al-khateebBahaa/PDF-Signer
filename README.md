@@ -136,6 +136,10 @@ mSignManager.openSigningLibrary(context:Context)
 
 4. Files not saved, but Signatures saved at Signatures library
 
+
+## Note:
+If you had any problem with setup, check the demo on main branch
+
 # License
 
 ```xml
